@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
-"dependencies": {
-    "express": "^4.17.1",
-    "twilio": "^4.0.0",
-    "dotenv": "^16.0.0"
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "twilio": "^4.23.0"
   }
 }
