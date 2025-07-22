@@ -28,10 +28,8 @@ app.post('/send-sms', async (req, res) => {
       from: fromNumber,
       to: toNumber
     });
-    console.log(`SMS enviado com SID: ${result.sid}`);
     res.json({ success: true, message: `SMS enviado para ${toNumber} com SID: ${result.sid}` });
   } catch (error) {
-    console.error('Erro ao enviar SMS:', error.message, error.code);
     res.status(500).json({ success: false, message: `Erro ao enviar SMS: ${error.message} (Código: ${error.code})` });
   }
 });

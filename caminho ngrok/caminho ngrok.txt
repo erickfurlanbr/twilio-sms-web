@@ -1,2 +1,0 @@
-PS C:\Users\erick\Desktop\ETC\Smpp client\SMPP+API\twilio-sms-web> ngrok config add-authtoken 30CsJMge7UGLfwqaSKhVrnpJN89_4wvb3c1rkzyj94W7uHiBT
-Authtoken saved to configuration file: C:\Users\erick\AppData\Local/ngrok/ngrok.yml
