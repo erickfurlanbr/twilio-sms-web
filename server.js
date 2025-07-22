@@ -4,7 +4,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(express.json());
-app.use(express.static('public')); // Serve arquivos estáticos da pasta 'public'
+app.use(express.static('public')); // Serve arquivos estáticos
 
 // Rota para envio de SMS
 app.post('/send-sms', async (req, res) => {
@@ -34,7 +34,7 @@ app.post('/send-sms', async (req, res) => {
   }
 });
 
-// Iniciar o servidor localmente
+// Para testes locais
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
