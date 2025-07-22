@@ -4,8 +4,9 @@ require('dotenv').config();
 const app = express();
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('public')); // Serve arquivos estáticos da pasta 'public'
 
+// Rota para envio de SMS
 app.post('/send-sms', async (req, res) => {
   const { fromNumber, toNumber, message } = req.body;
   const accountSid = process.env.TWILIO_ACCOUNT_SID;
